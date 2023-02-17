@@ -1,0 +1,12 @@
+/*----SERVICIOS----*/
+
+.servicios{
+    &:hover{
+        background-color: blue;
+        transform: scale(1.4);
+        transition: 1s;
+    }
+    img{
+        width: 20%;
+    }
+}

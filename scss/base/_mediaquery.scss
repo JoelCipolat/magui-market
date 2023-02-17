@@ -1,0 +1,39 @@
+/*----MEDIA QUERY----*/
+
+@media screen and (max-width:800px){
+    .imagen-top{
+        display: flex;
+    }
+
+    .imagen-mid{
+        display: flex;
+    }
+
+    .imagen-bot{
+        display: flex;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .servicios img{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .productos img{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:500px){
+    .container-fluid{
+       font-size: 60%;
+    }
+}
+
+@media screen and (max-width:400px){
+    .container-fluid{
+       font-size: 45%;
+    }
+}

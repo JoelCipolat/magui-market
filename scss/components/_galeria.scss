@@ -1,0 +1,22 @@
+/*----GALERIA----*/
+
+.imagen-top{
+    @extend %grid;
+    img{
+        width: 100%;
+    }
+}
+
+.imagen-mid{
+    @extend %grid;
+    img{
+        width: 100%;
+    }
+}
+
+.imagen-bot{
+    @extend %grid;
+    img{
+        width: 100%;
+    }
+}
