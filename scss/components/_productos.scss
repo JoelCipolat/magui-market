@@ -1,0 +1,12 @@
+/*----PRODUCTOS----*/
+
+.productos{
+    &:hover{
+        background-color: skyblue;
+        transform: scale(1.1);
+        transition: 1s;
+    }
+    img{
+        width: 20%;
+    }
+}

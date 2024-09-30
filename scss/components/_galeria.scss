@@ -1,0 +1,8 @@
+/*----GALERIA----*/
+
+.galeria{
+    @extend %grid;
+    img{
+        width: 100%;
+    }
+}

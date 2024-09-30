@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+main section div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.galeria {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 50px;
+  gap: 50px;
+  column-gap: 100px; }
+
+/*----HEADER----*/
+header {
+  background-color: yellow;
+  text-align: center;
+  font-size: 40px;
+  user-select: none; }
+  header h1 {
+    font-size: 100px;
+    font-family: 'Patrick Hand';
+    color: blue; }
+  header nav {
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    background: url(../img/carrito.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; }
+    header nav ul li {
+      display: inline-block;
+      margin: 15px;
+      padding: 15px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border: 5px solid skyblue; }
+      header nav ul li:hover {
+        box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75);
+        border: 10px solid blue;
+        transform: scale(1.1);
+        transition: 1s; }
+      header nav ul li a {
+        text-decoration: none;
+        color: white; }
+        header nav ul li a:hover {
+          color: yellow;
+          transition: 1s; }
+
+.kiosco {
+  max-width: 100%; }
+
+.container-fluid {
+  position: sticky;
+  top: 0;
+  z-index: 1; }
+
+.instagram {
+  text-decoration: none;
+  color: violet; }
+
+/*----MAIN----*/
+main {
+  text-align: center;
+  user-select: none; }
+  main section div img {
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75); }
+
+/*----FOOTER----*/
+footer {
+  margin: 20px;
+  text-align: center;
+  user-select: none; }
+  footer div h2 {
+    color: goldenrod; }
+  footer div h3 {
+    color: navy; }
+
+/*----PROD----*/
+.prod {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  user-select: none; }
+  .prod h4 {
+    margin-bottom: 25px;
+    height: 50px; }
+  .prod div {
+    background-color: white;
+    width: 320px;
+    height: 405px;
+    margin: 38px;
+    border: 10px solid black;
+    text-align: center;
+    display: inline-block;
+    position: relative; }
+    .prod div h4 {
+      position: absolute;
+      bottom: 0;
+      color: navy;
+      width: 100%;
+      font-size: 30px; }
+    .prod div img {
+      width: 300px;
+      height: 300px; }
+
+/*----PRODUCTOS----*/
+.productos:hover {
+  background-color: skyblue;
+  transform: scale(1.1);
+  transition: 1s; }
+
+.productos img {
+  width: 20%; }
+
+/*----SERVICIOS----*/
+.servicios:hover {
+  color: yellow;
+  background-color: blue;
+  transform: scale(1.1);
+  transition: 1s; }
+
+.servicios img {
+  width: 20%; }
+
+/*----GALERIA----*/
+.galeria img {
+  width: 100%; }
+
+/*----MEDIA QUERY----*/
+@media screen and (max-width: 800px) {
+  .galeria {
+    display: flex; } }
+
+@media screen and (max-width: 1000px) {
+  .servicios img {
+    width: 50%; } }
+
+@media screen and (max-width: 1000px) {
+  .productos img {
+    width: 50%; } }
+
+@media screen and (max-width: 520px) {
+  .container-fluid {
+    font-size: 60%; } }
+
+@media screen and (max-width: 420px) {
+  .container-fluid {
+    font-size: 40%; } }
+
+@media screen and (max-height: 500px) {
+  /*----(max-height)----*/
+  .container-fluid {
+    font-size: 30%; } }
+
+@media screen and (max-width: 1000px) {
+  div .iframe {
+    width: 100%; } }
+
+@media screen and (max-width: 700px) {
+  div .iframe {
+    height: 300px; } }
+
+@media screen and (max-height: 500px) {
+  /*----(max-height)----*/
+  div .iframe {
+    height: 500px; } }
+
+@media screen and (max-width: 420px) {
+  header h1 {
+    font-size: 50px; } }
+
+@media screen and (max-height: 500px) {
+  /*----(max-height)----*/
+  header nav ul li {
+    border: 2px solid skyblue;
+    margin: 5px;
+    padding: 10px; } }
+
+@media screen and (max-height: 500px) {
+  /*----(max-height)----*/
+  header nav ul li:hover {
+    border: 4px solid blue; } }
+
+@media screen and (max-width: 299px) {
+  body {
+    display: none; } }
